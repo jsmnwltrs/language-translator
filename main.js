@@ -26,6 +26,7 @@ const french = {
 };
 
 
+
 const printToDom = (stringToPrint, divId) => {
     const selectedDiv = document.getElementById(divId);
     selectedDiv.innerHTML = stringToPrint;
@@ -41,3 +42,17 @@ for (i = 0; i < inputArray.length; i++) {
 };
 printToDom(outputString,'emptyDiv');
 };
+
+let germanButtonElement = document.getElementById('germanButton');
+germanButtonElement.addEventListener('click', function(){translatorLoop(german)});
+
+let spanishButtonElement = document.getElementById('spanishButton');
+spanishButtonElement.addEventListener('click', function(){translatorLoop(spanish)});
+
+let frenchButtonElement = document.getElementById('frenchButton');
+frenchButtonElement.addEventListener('click', function(){translatorLoop(french)});
+
+let clearButton = document.getElementById('clearButton');
+clearButton.addEventListener('click', function(){document.getElementById('emptyDiv').value = ''}, false);
+
+
