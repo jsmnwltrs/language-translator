@@ -34,6 +34,7 @@ const printToDom = (stringToPrint, divId) => {
 
 let outputString = '';
 const translatorLoop = (language) => {
+outputString = '';
 let inputText = document.getElementById('textarea').value.toLowerCase();
 let inputArray = inputText.split(' ');
 for (i = 0; i < inputArray.length; i++) {
@@ -52,7 +53,5 @@ spanishButtonElement.addEventListener('click', function(){translatorLoop(spanish
 let frenchButtonElement = document.getElementById('frenchButton');
 frenchButtonElement.addEventListener('click', function(){translatorLoop(french)});
 
-let clearButton = document.getElementById('clearButton');
-clearButton.addEventListener('click', function(){document.getElementById('emptyDiv').value = ''}, false);
 
 
