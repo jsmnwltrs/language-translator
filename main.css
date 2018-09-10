@@ -1,23 +1,21 @@
-
-
-
 h1 {
-    background-color: lightblue;
     display: flex;
     justify-content: center;
+    color: green;
+    font-size: 400%;
+    font-family: 'Lobster', cursive;
 }
 
 body{
-    background-color: burlywood;
+    background-image: url('snow.gif');
+    background-size: cover;
 }
 
 .emptyDiv {
-    background-color:   whitesmoke;
-    display: flex;
-    justify-content: center;
-    margin-left: 25%;
-    margin-right: 25%;
-    max-height: 200%;
+    border: 1px solid black;
+    margin: 20px 375px;
+    background-color: white;
+    height: 250px;
 }
 
 #germanButton, #spanishButton, #frenchButton, #clearButton {
@@ -34,7 +32,12 @@ body{
 
 .textarea {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
+.image {
+    width: 25%;
+    height: 45%;
+}
 
